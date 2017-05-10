@@ -1,0 +1,92 @@
+.header {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1400px;
+  height: 2733px;
+  z-index: 16;
+}
+#Logo {
+  background-image: url(image/Logo.png);
+  position: absolute;
+  left: 188px;
+  top: 35px;
+  width: 212px;
+  height: 51px;
+  z-index: 15;
+}
+
+.menu{
+  font-size: 16px;
+  font-family: "RobotoSlab";
+  color: rgb(241, 239, 236);
+  text-transform: uppercase;
+  line-height: 1.571;
+  text-align: left;
+  position: absolute;
+  left: 551.97px;
+  top: 23.003px;
+  z-index: 14;
+
+}
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.menu li a{
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+
+}
+.menu a:hover  {
+  background-color: rgb(155, 36, 45);
+
+}
+.Rectangle_1 {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 1403px;
+  height: 117px;
+  z-index: 12;
+}
+.banner {
+  background-image: url("image/n.png");
+  opacity: 0.49;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  width: 1400px;
+  height: 626px;
+  z-index: 6;
+}
+.text{
+  font-size: 50px;
+  font-family: "RobotoSlab";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 317.928px;
+  top: 150.088px;
+  z-index: 7;
+}
+.text1{
+  font-size: 20.5px;
+  font-family: "RobotoSlab";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 267.928px;
+  top: 267.088px;
+  z-index: 7;
+}
