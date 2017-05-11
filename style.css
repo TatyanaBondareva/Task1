@@ -15,36 +15,6 @@
   height: 51px;
   z-index: 15;
 }
-
-.menu{
-  font-size: 16px;
-  font-family: "RobotoSlab";
-  color: rgb(241, 239, 236);
-  text-transform: uppercase;
-  line-height: 1.571;
-  text-align: left;
-  position: absolute;
-  left: 551.97px;
-  top: 23.003px;
-  z-index: 14;
-
-}
-.menu li {
-  display: inline-block;
-  margin-right: 10px;
-
-}
-
-.menu li a{
-  text-decoration: none;
-  display: block;
-  padding: 5px 10px;
-
-}
-.menu a:hover  {
-  background-color: rgb(155, 36, 45);
-
-}
 .Rectangle_1 {
   background-color: rgb(255, 255, 255);
   position: absolute;
@@ -60,7 +30,7 @@
   position: absolute;
   left: 0px;
   top: 100px;
-  width: 1400px;
+  width: 1500px;
   height: 626px;
   z-index: 6;
 }
@@ -89,4 +59,114 @@
   left: 267.928px;
   top: 267.088px;
   z-index: 7;
+}
+.button {
+  font-size: 26px;
+  font-family: "OpenSans";
+  color: green;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent;
+  position: absolute;
+  left: 558px;
+  top: 367px;
+  width: 273px;
+  height: 61px;
+  z-index: 8;
+}
+
+
+.menu{
+  font-size: 16px;
+  font-family: "RobotoSlab";
+  color: rgb(241, 239, 236);
+  text-transform: uppercase;
+  line-height: 1.571;
+  text-align: left;
+  position: absolute;
+  left: 551.97px;
+  top: 23.003px;
+  z-index: 14;
+
+}
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+.menu li a{
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+
+}
+.menu a:hover  {
+  background-color: rgb(155, 36, 45);
+}
+.ban2 {
+  background-color: rgb(241, 239, 236);
+  position: absolute;
+  left: 0px;
+  top: 726px;
+  width: 650px;
+  height: 316px;
+  z-index: 49;
+}
+
+.logo2 {
+  background-image: url("image/logo2.png");
+  background-repeat:no-repeat;
+  position: relative;
+  left: 237px;
+  top: 837px;
+  width: 300px;
+  height: 59px;
+  z-index: 50;
+}
+.image1 {
+  background-image: url("image/image1.png");
+  background-repeat:no-repeat;
+  position: absolute;
+  left: 650px;
+  top: 726px;
+  width: 350px;
+  height: 316px;
+  z-index: 51;
+}
+.ban3 {
+  background-color: rgb(155, 36, 45);
+  position: absolute;
+  left: 968px;
+  top: 726px;
+  width: 535px;
+  height: 316px;
+  z-index: 53;
+}
+.txt{
+  font-size: 40px;
+  font-family: "RobotoSlab";
+  color: rgb(255, 255, 255);
+  line-height: 0.55;
+  text-align: left;
+  position: absolute;
+  top: 105px;
+  left:  73px;
+  z-index: 57;
+}
+.txt1{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.375;
+  text-align: left;
+  position: absolute;
+  top: 173px;
+  left:  73px;
+  z-index: 54;
 }

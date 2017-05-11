@@ -1,0 +1,17 @@
+{
+  "name": "gulpproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "g1"
+  ],
+  "author": "Tanya",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
