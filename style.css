@@ -1,6 +1,14 @@
 @font-face {
   font-family: RobotoSlab;
-  src: url(fonts/RobotoSlabRegular/RobotoSlabRegular.ttf);
+  src: url(fonts/RobotoSlab-Bold.ttf);
+  src: url(fonts/RobotoSlab-Regular.ttf);
+    src: url(fonts/RobotoSlab-Light.ttf);
+  src: url(fonts/RobotoSlab-Thin.ttf);
+}
+@font-face {
+  font-family: RobotoSlab;
+  src: url(fonts/RobotoSlab-Bold.ttf);
+  src: url(fonts/RobotoSlab-Regular.ttf);
 }
 @font-face {
   font-family: Roboto;
@@ -11,54 +19,112 @@
   font-family: OpenSans;
   src: url(fonts/OpenSansRegular/OpenSansRegular.ttf);
 }
-
+body{
+  width: 100%;
+  margin: 0;
+}
 header {
   position: absolute;
-  left: -1px;
-  top: -1px;
-  width: 1400px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 2733px;
   z-index: 16;
 }
 .Logo {
   background-image: url(image/Logo.png);
   position: absolute;
-  left: 188px;
-  top: 35px;
+  left: 13.42%;
+  top: 1.167%;
   width: 215px;
   height: 50px;
   z-index: 15;
 }
+.menu{
+  font-size: 14px;
+  font-family: "Roboto Slab-Thin";
+  text-transform: uppercase;
+  line-height: 1.571;
+  text-align: left;
+  position: absolute;
+  left: 35.8%;
+  top: 1.04%;
+  z-index: 14;
+}
+
+
+
+
+.menu li {
+  display: inline-block;
+  margin-right: 6,26%;
+
+}
+
+.menu  li a{
+  font-family: "Roboto Slab-Thin";
+  text-transform: uppercase;
+  font-stretch: ultra-expanded;
+  text-decoration: none;
+  display: block;
+  color: #373838;
+  padding: 6.5px 16.0px;
+
+}
+.menu  a:hover  {
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: rgb(155, 36, 45);
+  z-index: 13;
+}
+
+#redColor {
+  color: #ffffff;
+  border-radius: 2px;
+  background-color: rgb(155, 36, 45);
+  z-index: 13;
+}
+.Rounded_Rectangle_1 {
+  border-radius: 2px;
+  background-color: rgb(155, 36, 45);
+  position: absolute;
+  left: 541px;
+  top: 41px;
+  width: 73px;
+  height: 34px;
+  z-index: 13;
+}
 
 .banner {
-  background-image: url("image/n.png");
-  background-repeat: no-repeat;
+  background-size: 100%;
   position: absolute;
-  left: 0px;
-  top: 118px;;
-  width: 1400px;
+  top: 118px;
+  width: 100%;
   height: 626px;
   z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .text{
-  font-size: 48px;
+  font-size: 50px;
   font-family: "RobotoSlab";
-  color: rgb(255, 255, 255);
   font-weight: bold;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.2;
-  text-align: center;
   position: absolute;
   left: 317.928px;
   top: 150.088px;
   z-index: 7;
 }
 .text1{
-  font-size: 25.5px;
-  font-family: "RobotoSlab";
+  font-size: 24px;
+  font-family: "RobotoSlab-Thin";
   color: rgb(255, 255, 255);
   line-height: 1.2;
-  font-weight: lighter;
+  font-weight: 100;
   text-align: center;
   position: absolute;
   left: 267.928px;
@@ -86,44 +152,6 @@ header {
   z-index: 8;
 }
 
-
-.menu{
-  font-size: 14px;
-  font-family: "Roboto Slab";
-  color: rgb(241, 239, 236);
-  text-transform: uppercase;
-  line-height: 1.571;
-  text-align: left;
-  position: absolute;
-  left: 552.036px;
-  top: 41.003px;
-  z-index: 14;
-}
-.menu li {
-  display: inline-block;
-  margin-right: 10px;
-
-}
-
-.menu li a{
-  text-decoration: none;
-  display: block;
-  padding: 5px 10px;
-
-}
-.menu a:hover  {
-  color: rgb(255, 255, 255);
-  border-radius: 2px;
-  background-color: rgb(155, 36, 45);
-  z-index: 13;
-}
-
-.redColor {
-  color: rgb(255, 255, 255);
-  border-radius: 2px;
-  background-color: rgb(155, 36, 45);
-  z-index: 13;
-}
 /*.artcl {
   background-color: rgb(255, 255, 255);
   position: absolute;
@@ -133,14 +161,16 @@ header {
   height: 2733px;
   z-index: 1;
 }*/
+
+
 .ban2 {
   background-color: rgb(241, 239, 236);
   position: absolute;
   left: 0px;
   top: 718px;
-  width: 540px;
+  width: 41.5%;
   height: 316px;
-  z-index: 49;;
+  z-index: 49;
 }
 
 
@@ -149,8 +179,8 @@ header {
   background-image: url("image/logo2.png");
   background-repeat:no-repeat;
   position: absolute;
-  left: 203px;
-  top: 847px;
+  left: 40.37%;
+  top: 41.31%;
   width: 285px;
   height: 59px;
   z-index: 50;
@@ -163,22 +193,23 @@ header {
   background-image: url("image/image1.png");
   background-repeat:no-repeat;
   position: absolute;
-  left: 540px;
+  left: 41.5%;
   top: 718px;
-  width: 320px;
+  width: 26%;
   height: 316px;
-  z-index: 51;
+  z-index: 49;
 }
 
 
 .ban3 {
   background-color: rgb(155, 36, 45);
+  background-size: 100%;
   position: absolute;
-  left: 860px;
+  left: 58%;
   top: 718px;
-  width: 545px;
+  width: 43.5%;
   height: 316px;
-  z-index: 53;
+  z-index: 49;
 }
 
 
@@ -208,7 +239,8 @@ header {
 }
 
 .ban4 {
-  background-color: rgb(70, 166, 81);
+  background: rgb(70, 166, 81);
+  background-size: 100%;
   position: absolute;
   left: -13px;
   top: 1034px;
@@ -251,7 +283,7 @@ header {
   height: 313px;
   z-index: 47;
 }
-.artcl {
+/*.artcl {
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 0px;
@@ -259,7 +291,7 @@ header {
   width: 1400px;
   height: 2733px;
   z-index: 1;
-}
+}*/
 .txt2 {
   font-size: 40px;
   font-family: "RobotoSlab";
