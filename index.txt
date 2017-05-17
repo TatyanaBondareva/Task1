@@ -20,6 +20,7 @@
   </header>
   <div class="banner">
     <img src="image/n.png" width="100%" height="603px">
+    <!--сглаживание шрифтов-->
     <h4 class="text">welcome TO MY CHARITY</h4>
     <p class="text1">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
     <button class="button">Donate now</button>
@@ -35,13 +36,13 @@
 
   <div class="ban4">
     <h3 class="txt2">Sign up to newsletter</h3>
+    <!-- сделать элементы с помощью flexbox-->
     <form>
         <input class="inp" type="text" placeholder="Enter your email">
         <input class="sub" type="submit" value="Subscribe">
     </form>
-    <p class="txt3">Lorem Ipsum is simple dummy text of the printing and typeself ing industry. Lorem Ipsum has been the industry's standart dummy text</p></div>
-    <div class="ban5"></div>
+    <p class="txt3">Lorem Ipsum is simple dummy text of the printing and typeself<br>ing industry. Lorem Ipsum has been the industry's standart dummy text</p></div>
+    <div class="ban5"><div class="like"></div></div><!--работа с Font Awesome-->
     <div class="ban6 im"></div>
-    <div class="like"></div>
 </body>
 </html>

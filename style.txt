@@ -19,7 +19,7 @@ body{
 }
 header {
   position: absolute;
-  color: green;
+  /*background-color: blue;*/
   left: 0px;
   top: 0px;
   width: 100%;
@@ -41,7 +41,7 @@ header {
 .menu{
   text-align: left;
   position: absolute;
-  left: 500px;
+  left: 35.65%;
   top: 22%;
   z-index: 14;
   display: flex;
@@ -60,11 +60,12 @@ header {
 .menu  li a{
   font-size: 14px;
   font-family: "Roboto Slab";
+  /*font-weight: 200;*/
   text-transform: uppercase;
   text-decoration: none;
   display: block;
   color: #373838;
-  padding: 6.5px 16.0px;
+  padding: 7.5px 16.0px;
 
 }
 
@@ -91,6 +92,7 @@ header {
   width: 100%;
   top: 116px;
   z-index: 3;
+
 
 }
 
@@ -128,6 +130,7 @@ header {
   font-family: "Open Sans";
   background-color: #FFFFFF;
   color: rgb(70, 166, 81);
+  outline: none;
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
@@ -144,19 +147,9 @@ header {
   z-index: 8;
 }
 
-
-
-
-/*.artcl {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1400px;
-  height: 2733px;
-  z-index: 1;
-}*/
-
+.button:active{
+  background-color: yellow; /*  проверка работы кнопки*/
+}
 
 .ban2 {
   background-color: rgb(241, 239, 236);
@@ -187,13 +180,13 @@ header {
 
 .image1 {
   background-image: url("image/image1.png");
-  background-repeat:no-repeat;
+  background-size: cover;
   position: absolute;
   left: 39.0%;
   top: 718px;
-  width: 22.92%;
+  width: 23.92%;
   height: 316px;
-  z-index: 49;
+  z-index: 50;
 }
 
 
@@ -223,6 +216,7 @@ header {
 }
 
 
+
 .txt1{
   font-size: 16px;
   font-family: "Roboto";
@@ -240,9 +234,9 @@ header {
   background: rgb(70, 166, 81);
   background-size: 100%;
   position: absolute;
-  left: -13px;
+  /*left: -13px;*/
   top: 1034px;
-  width: 873px;
+  width: 63.0%;
   height: 317px;
   z-index: 46;
 }
@@ -250,11 +244,12 @@ header {
 
 .ban5 {
   background-image: url("image/image2.png");
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  left: 720px;
+  left: 51.35%;
   top: 1028px;
-  width: 680px;
+  width: 48.57%;
   height: 634px;
   z-index: 43;
 }
@@ -263,11 +258,11 @@ header {
 
 .ban6 {
   background-image: url("image/image3.png");
-  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   left: 0px;
   top: 1344px;
-  width: 900px;
+  width: 63.0%;
   height: 317px;
   z-index: 45;
 }
@@ -275,58 +270,54 @@ header {
 .like {
   background-color: rgb(59, 89, 151);
   position: absolute;
-  left: 858.4px;
-  top: 1351px;
-  width: 320px;
+  left: 5%;
+  top: 50.57%;
+  width: 63.14%;
   height: 313px;
-  z-index: 47;
+  z-index: 50;
 }
-/*.artcl {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1400px;
-  height: 2733px;
-  z-index: 1;
-}*/
+
 .txt2 {
   font-size: 40px;
-  font-family: "RobotoSlab";
+  font-family: "Roboto Slab";
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: 500;
   text-align: right;
   position: absolute;
-  left: 265px;
-  top: 0px;
+  left: 43.16%;
+  top: 6.77%;
   z-index: 58;
 }
 .txt3 {
   font-size: 16px;
   font-family: "Roboto";
+  font-weight: 100;
   color: rgb(255, 255, 255);
   line-height: 1.375;
   text-align: right;
   position: absolute;
-  left: 250.545px;
-  top: 198.546px;
-  width: 513px;
+  left: 31.12%;
+  top: 57.15%;
+  width: 59.8%;
   height: 39px;
   z-index: 56;
 }
+
+
 .inp{
   background-color: rgb(94, 192, 105);
   color: rgb(70, 166, 81);
   opacity: 0.5;
   border: none;
-  text-align:center;
+  padding-left: 21px;
+  text-align: left;
   font-size: 16px;
   font-family: "Roboto";
   line-height: 1.375;
   position: absolute;
-  left: 273.545px;
-  top: 121px;
-  width: 337px;
+  left: 44.39%;
+  top: 42.93%;
+  width: 32.07%;
   height: 44px;
   z-index: 59;
 }
@@ -340,20 +331,12 @@ header {
   font-family: "Roboto";
   font-size: 16px;
   position: absolute;
-  left: 613.545px;
-  top: 121px;
-  width: 123px;
+  left: 76.19%;
+  top: 42.93%;
+  width: 14.29%;
   height: 46px;
   z-index: 61;
 }
-.Enter_your_email {
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(70, 166, 81);
-  line-height: 1.375;
-  text-align: left;
-  position: absolute;
-  left: 403.938px;
-  top: 1200.546px;
-  z-index: 60;
+input{
+  outline: none;
 }
