@@ -26,7 +26,7 @@ header {
   height: 116px;
   z-index: 1;
 }
-.Logo {
+.logo {
   background-image: url(image/Logo.png);
   background-repeat: no-repeat;
   position: absolute;
@@ -335,8 +335,155 @@ header {
   top: 42.93%;
   width: 14.29%;
   height: 46px;
-  z-index: 61;
+
 }
-input{
+
+.events{
+  left: 0px;
+  top: 61.03%;
+  width: 100%;
+  height: 300px;
+  /*background-color: red;*/
+}
+.our-events {
+  font-size: 50px;
+  font-weight: 300;
+  font-family: "Roboto Slab";
+  color: rgb(55, 56, 56);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 571.407px;
+  top: 1673.5px;
+  z-index: 18;
+}
+.ev-oct {
+/*  блок событий     */
+  position: absolute;
+  left: 137.8px;
+  top: 1850px;
+  width: 1280.126px;
+  height: 102px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  z-index: 21;
+}
+.elem-october{
+  /*background-color: yellow;*/
+  width:  337.37px;
+  height: 307.0px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+.red-dates {
+  background-image: url("image/redDates.png");
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 88px;
+  height: 102px;
+  z-index: 21;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.gray-dates{
+  background-image: url("image/grayDate.png");
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 88px;
+  height: 102px;
+  z-index: 21;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.num{
+  font-size: 36px;
+  font-family: "Roboto Slab";
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  line-height: 1.2;
+  top: 21px;
+  position: absolute;
+
+}
+.october {
+  font-size: 30px;
+  font-family: "Roboto Slab";
+  color: rgb(155, 36, 45);
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+  /*left: 644.844px;
+  top: 1973px;*/
+
+}
+.lorem-ipsum-is-simply {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  top: 12px;
+  color: rgb(55, 56, 56);
+  line-height: 1.2;
+  align-self:  center;
+  position: relative;
+
+}
+.lorem-ipsum-text{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(55, 56, 56);
+  line-height: 1.571;
+  text-align: center;
+  position: relative;
+  /*left: 208.572px;
+  top: 2081.023px;*/
+  width: 265px;
+  height: 80px;
+  z-index: 31;
+}
+.red-more {
+  background-color: rgb(155, 36, 45);
   outline: none;
+  border: none;
+  position: relative;
+  font-size: 14px;
+  font-family: "Roboto";
+  text-transform:uppercase;
+  color: rgb(255, 255, 255);
+  line-height: 1.571;
+  text-align: center;
+  /*left: 307px;**/
+  top: 37.7px;
+  width: 87px;
+  height: 36px;
+  z-index: 34;
 }
+.gray-more {
+  background-color: rgb(55, 56, 56);
+  outline: none;
+  border: none;
+  position: relative;
+  font-size: 14px;
+  font-family: "Roboto";
+  text-transform:uppercase;
+  color: rgb(255, 255, 255);
+  line-height: 1.571;
+  text-align: center;
+  /*left: 307px;**/
+  top: 37.7px;
+  width: 87px;
+  height: 36px;
+  z-index: 34;
+}
+/*   *************ПРОВЕРКА РАБОТЫ КНОПКИ****************
+.red-more:active{
+  background-color: rgb(55, 56, 56);
+}
+*/
