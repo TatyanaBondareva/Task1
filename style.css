@@ -362,7 +362,7 @@ header {
   position: absolute;
   left: 137.8px;
   top: 1850px;
-  width: 1280.126px;
+  width: 91.47%;
   height: 102px;
   list-style-type: none;
   display: flex;
@@ -372,7 +372,7 @@ header {
 }
 .elem-october{
   /*background-color: yellow;*/
-  width:  337.37px;
+  width:  29.12%;
   height: 307.0px;
   display: flex;
   flex-direction: column;
@@ -380,30 +380,47 @@ header {
   align-items: center;
 }
 .red-dates {
-  background-image: url("image/redDates.png");
+  background-color: rgb(155, 36, 45);
   color: rgb(255, 255, 255);
   text-align: center;
   width: 88px;
-  height: 102px;
+  height: 88px;
   z-index: 21;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+
+.red-dates::after {
+  content: '';
+  position: absolute;
+  top: 88px;
+  align-self: center;
+  border: 15px solid transparent;
+  border-top: 15px solid rgb(155, 36, 45);
 }
 
 
 .gray-dates{
-  background-image: url("image/grayDate.png");
+  background-color: rgb(55, 56, 56);
   color: rgb(255, 255, 255);
   text-align: center;
   width: 88px;
-  height: 102px;
+  height: 88px;
   z-index: 21;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
+.gray-dates::after {
+  content: '';
+  position: absolute;
+  top: 88px;
+  align-self: center;
+  border: 15px solid transparent;
+  border-top: 15px solid rgb(55, 56, 56);
+}
 .num{
   font-size: 36px;
   font-family: "Roboto Slab";
@@ -421,14 +438,14 @@ header {
   line-height: 1.2;
   text-align: center;
   position: relative;
-  /*left: 644.844px;
-  top: 1973px;*/
+  /*left: 644.844px;*/
+  top: 5%;
 
 }
 .lorem-ipsum-is-simply {
   font-size: 18px;
   font-family: "Roboto Slab";
-  top: 12px;
+  top: 10%;
   color: rgb(55, 56, 56);
   line-height: 1.2;
   align-self:  center;
@@ -442,8 +459,8 @@ header {
   line-height: 1.571;
   text-align: center;
   position: relative;
-  /*left: 208.572px;
-  top: 2081.023px;*/
+  /*left: 208.572px;*/
+  top: 5%;
   width: 265px;
   height: 80px;
   z-index: 31;
@@ -467,8 +484,15 @@ header {
 }
 .gray-more {
   background-color: rgb(55, 56, 56);
-  outline: none;
-  border: none;
+  /*left: 307px;**/
+  top: 37.7px;
+  width: 87px;
+  height: 36px;
+  z-index: 34;
+}
+
+.more-text {
+  text-decoration: none;
   position: relative;
   font-size: 14px;
   font-family: "Roboto";
@@ -476,14 +500,4 @@ header {
   color: rgb(255, 255, 255);
   line-height: 1.571;
   text-align: center;
-  /*left: 307px;**/
-  top: 37.7px;
-  width: 87px;
-  height: 36px;
-  z-index: 34;
 }
-/*   *************ПРОВЕРКА РАБОТЫ КНОПКИ****************
-.red-more:active{
-  background-color: rgb(55, 56, 56);
-}
-*/
