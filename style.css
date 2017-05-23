@@ -6,6 +6,11 @@
 	margin: 0;
 	padding: 0;
 }
+
+html {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
  body {
  	height: 2733px;
  }
@@ -44,7 +49,7 @@ header {
 
 .menu  li a{
   font-size: 14px;
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab";
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -90,24 +95,24 @@ header {
   font-family: "Roboto Slab";
   font-size: 50px;
   font-smooth: subpixel-antialiased;
-  font-weight: 500;
+  font-weight: bold;
   color: rgb(255, 255, 255);
   align-self: center;
   text-transform: uppercase;
   line-height: 1.2;
   /*margin-left: 317.928px; */
-  margin-top: 16%;
+  margin-top: 15.67%;
 
 }
 .text1{
   font-size: 24px;
-  font-family: Roboto Slab;
-  font-weight: lighter;
+  font-family: "Roboto Slab";
+  font-weight: 300;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   align-self: center;
  /* margin-left: 267.928px; */
-  margin-top: 1.16%;
+	margin-top: 0.3%;
 }
 
 .button {
@@ -169,7 +174,7 @@ header {
   font-size: 40px;
   font-family: "Roboto Slab";
   /*background-color: LightBlue;*/
-  font-weight: 500;
+  font-weight: bold;
   color: rgb(255, 255, 255);
   line-height: 0.55;
   margin-left: 8.12%;
@@ -177,12 +182,14 @@ header {
 .txt1{
   font-size: 16px;
   font-family: "Roboto";
-  font-weight: 100;
+  /*font-weight: 400;*/
   color: rgb(255, 255, 255);
+	text-align: left;
   line-height: 1.375;
-  margin-left: 8.12%;
-  margin-top: 3.37%;
+  margin-left: 8.1%;
+  margin-top: 2.37%;
 }
+
 .green-banners {
 	width: 61.5%;
 	height: 40.8%;
@@ -205,22 +212,22 @@ header {
   color: rgb(255, 255, 255);
   font-weight: 600;
   align-self: flex-end;
-  margin-right: 7.77%;
+  margin-right: 9.10%;
   margin-top: 6.77%;
 }
 .form {
   width: 46.18%;
   height: 13.81%;
-  background-color: red;
+  background-color: pink;
   align-self: flex-end;
-  margin-right: 7.77%;
-  margin-top: 2%;
+  margin-right: 9.10%;
+  margin-top: 2.8%;
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
 
 }
-.inp{
+.inp {
   background-color: rgb(94, 192, 105);
   color: rgb(70, 166, 81);
   opacity: 0.5;
@@ -233,7 +240,7 @@ header {
   height: 100%;
   outline: none;
 }
-.sub{
+.sub {
   background-color: rgb(52, 142, 62);
   color: rgb(255, 255, 255);
   border: none;
@@ -247,12 +254,12 @@ header {
 .txt3 {
   font-size: 16px;
   font-family: "Roboto";
-  font-weight: 100;
+  font-weight: 400;
   color: rgb(255, 255, 255);
   line-height: 1.375;
   text-align: right;
   align-self: flex-end;
-  margin-right: 7.77%;
+  margin-right: 9.10%;
   margin-top: 1.67%;
   width: 59.8%;
   height: 39px;*/
