@@ -32,9 +32,9 @@ header {
   width: 16.29%;
   height: 41.38%;
 }
-.menu{
+.nav{
   /*background-color: LightBlue;*/
-  width: 48%;
+  width: 50%;
   margin-left: 9%;
   margin-top: 2.94%;
   height: 30.0%;
@@ -42,12 +42,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu li {
+.nav li {
   display: inline-block;
 
 }
 
-.menu  li a{
+.nav  li a{
   font-size: 14px;
   font-family: "Roboto Slab";
   text-transform: uppercase;
@@ -59,7 +59,7 @@ header {
 }
 
 
-.menu li a:hover  {
+.nav li a:hover  {
   color: rgb(255, 255, 255);
   border-radius: 2px;
   background-color: rgb(155, 36, 45);
@@ -71,6 +71,44 @@ header {
   border-radius: 2px;
   background-color: rgb(155, 36, 45);
 }
+
+@media screen and (max-width: 768px) {
+	.nav {
+		position: relative;
+		min-height: 50px;
+	}
+	.nav ul {
+			width: 20%;
+			height: 30%;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background:  url(image/hamburger.png) no-repeat;
+			background-size: contain;
+		}
+		.nav li {
+			display: none;
+		}
+
+		.nav ul:hover {
+			width: 50%;
+			background: none;
+
+		}
+		.nav ul:hover {
+			background:  url(image/close.png) no-repeat;
+			background-size: contain;
+		}
+		.nav ul:hover li{
+			display: block;
+			padding: 0;
+			margin-left: 10%;
+			text-align: center;
+			background-color: rgba(255, 255, 255, 0.5);
+
+		}
+	}
 
 .banners{
 	width: 100%;
