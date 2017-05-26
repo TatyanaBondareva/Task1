@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 *{
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -12,14 +12,14 @@ html {
     -moz-osx-font-smoothing: grayscale !important;
 }
  body {
- 	height: 2733px;
+  height: 2733px;
  }
 header {
-  background-color: LightGreen;
+  color: rgb(255, 255, 255);
   margin: 0%;
   padding: 0%;
   width: 100%;
-  height: 4.24%;
+  height: 116px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -27,10 +27,12 @@ header {
 .logo {
   background-image: url(image/Logo.png);
   background-repeat: no-repeat;
+  background-size: contain;
   margin-left: 13.42%;
   margin-top: 2.3%;
-  width: 16.29%;
-  height: 41.38%;
+  padding-bottom: 2.3%;
+  width: 215px;
+  height: 46px;
 }
 .nav{
   /*background-color: LightBlue;*/
@@ -44,6 +46,7 @@ header {
 }
 .nav li {
   display: inline-block;
+  padding-bottom: 2.3%;
 
 }
 
@@ -71,60 +74,506 @@ header {
   border-radius: 2px;
   background-color: rgb(155, 36, 45);
 }
+.checkbox {
+  visibility: hidden;
+}/*********************************************************************************************************************/
+@media screen and (min-width: 320px) and (max-width: 768px) {
 
-@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+  }
+  .nav {
+  padding-bottom: 2.3%;
+   margin-top: 2.94%;
+   margin-left: 0;
+   width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
 
-	.nav {
-		position: relative;
-		min-height: 50px;
-	}
-	.nav ul {
-			width: 20%;
-			height: 30%;
-			padding: 0;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background:  url(image/hamburger.png) no-repeat;
-			background-size: contain;
-		}
-		.nav li {
-			display: none;
-		}
+  input[type=checkbox]{
+    display: none;
+  }
+  label{
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    width: 100%;
+    background:  url(image/hamburger.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*background-color: green;*/
+    align-items: center;
+    padding-bottom: 5%;
+    cursor: pointer;
+  }
+  .nav ul {
+      width: 100%;
+      /*padding-bottom: 10%;*/
+      background-color: #f1efec;
+       margin-top: 2.3%;
+      text-align: center;
+      /*background:  url(image/hamburger.png) no-repeat;
+      background-size: contain;*/
+      display: none;
+    }
+    /*.nav li {
+      display: none;
+    }*/
+  .nav li {
+    width: 100%;
+    padding: 0;
+  }
+  .nav  li:hover{
+  font-size: 14px;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: rgb(155, 36, 45);
+  background-size: cover;
 
-		.nav ul:hover {
-			width: 50%;
-			background: none;
-			background:  url(image/close.png) no-repeat;
-			background-size: contain;
-		}
-		.nav ul:hover li{
-			display: block;
-			padding: 0;
-			margin-left: 10%;
-			text-align: center;
-			background-color: rgba(255, 255, 255, 0.5);
+}
 
-		}
-	}
+    input[type=checkbox]:checked ~ label {
+    background: none;
+    background:  url(image/close.png) no-repeat;
+    margin-left: 30%;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(155, 36, 45);
+    }
 
-.banners{
-	width: 100%;
-	height: 56.75%;
-	background-color: Pink;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+
+    input[type=checkbox]:checked ~ ul {
+      display: block;
+      margin-left: 30%;
+    }
+
+
+
+
+ .banners{
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  padding: 0px;
+}
+.banners .banner1 {
+  /*background-image: url(image/n.png);*/
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: red;
+  padding: 0;
+  width: 100%;
+  height: 285.8px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  }
+ .banners .banner1 .text{
+  font-family: "Roboto Slab";
+  font-size: 25px;
+  font-smooth: subpixel-antialiased;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  align-self: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  /*margin-left: 317.928px; */
+  /*margin-top: 15.67%;*/
+
+}
+.banners .banner1 .text1{
+  font-size: 0.75em;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  align-self: center;
+ /* margin-left: 267.928px; */
+  margin-top: 0.3%;
+}
+
+
+.banners .banner1 .button {
+  font-size: 11px;
+  width: 107.6px;
+  height: 22.4px;
+}
+.banners .banner1 .button-click:active::after {
+    content: attr(data-title);
+    font-family: "Roboto Slab";
+    font-weight: 100;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 102px;
+    top: 16px; /* Положение подсказки */
+    color: rgb(255, 255, 255);
+    text-shadow: 0, 0, 1px,rgba(0,0,0,0.7);
+    background-color: rgba(255,255,255,0.07); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 12px; /* Размер текста подсказки */
+    padding: 5px 14px; /* Поля */
+    border: 5px solid rgba(0,0,0,0.1); /* Параметры рамки */
+}
+.banners .banner2 {
+  background-color: rgb(241, 239, 236);
+  /*margin-top: 718px; */
+  width: 61.5%;
+  height: 126.8px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+}
+.banners .banner2 .logo-2 {
+  /*left: 215px;
+  top: 847px;*/
+  height: 30px;
+  align-self: center;
+}
+.banners .banner3 {
+  display: none;
+}
+.banners .banner4 {
+  width: 38.5%;
+  height: 126.8px;
+  padding-bottom: 0.001%;
+
+  }
+  .banners .banner4 .txt{
+    font-size: 20px;
+
+    }
+    .banners .banner4 .txt1{
+      font-size: 0.73em;
+      /*font-weight: 400;*/
+
+    }
+.banners .green-banners {
+  width: 61.5%;
+  height: 253.6px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.banners .banner5 {
+  width: 100%;
+  height: 50%;
+}
+.banners .banner5 .txt2{
+  font-size: 16px;
+}
+.banners .banner5 .form{
+  height: 20px;
+  width: 160px;
+  margin-top: 10px;
+}
+.banners .banner5 .form .inp{
+  font-size: 10px;
+}
+.banners .banner5 .form .sub{
+  font-size: 10px;
+}
+.banners .banner5 .txt3{
+  font-size: 10px;
+  width: 73.37%;
+}
+.banners .banner6 {
+  background-image: url("image/image2.png");
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+}
+    /*.nav ul:hover {
+      width: 50%;
+      background: none;
+      background:  url(image/close.png) no-repeat;
+      background-size: contain;
+    }
+    .nav ul:hover li{
+      display: block;
+      padding: 0;
+      margin-left: 10%;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+
+    }*/
+    .banners .banner7 {
+      width:  38.5%;
+      height: 253.6px;
+    }
+
+    .section {
+      width: 100%;
+      /*height: 63.73%;*/
+      background-color: LightBlue;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+
+
+    }
+
+    .section .events-in-october {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+    }
+    .section .events-in-october .event-in-october {
+      background-color: pink;
+      width:  100%;
+      height: 30%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+    }
+
+
+
+
+}/***********************************************************************************************************************/
+/*@media screen and (min-width: 1400px) and (max-width: 1920px) {
+
+  header {
+    height: auto;
+  }
+  .nav {
+  padding-bottom: 2.3%;
+   margin-top: 2.94%;
+   margin-left: 0;
+   width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+
+
+  .nav ul {
+      width: 100%;
+
+      background-color: #f1efec;
+       margin-top: 2.3%;
+      text-align: center;
+
+      display: none;
+    }
+
+  .nav li {
+    width: 100%;
+    padding: 0;
+  }
+  .nav  li:hover{
+  font-size: 14px;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: rgb(155, 36, 45);
+  background-size: cover;
+
+}
+
+
+
+
+
+ .banners{
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  padding: 0px;
+}
+.banners .banner1 {
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: red;
+  padding: 0;
+  width: 100%;
+  height: 285.8px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  }
+ .banners .banner1 .text{
+  font-family: "Roboto Slab";
+  font-size: 25px;
+  font-smooth: subpixel-antialiased;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  align-self: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+
+}
+.banners .banner1 .text1{
+  font-size: 0.75em;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  align-self: center;
+
+  margin-top: 0.3%;
+}
+
+
+.banners .banner1 .button {
+  font-size: 11px;
+  width: 107.6px;
+  height: 22.4px;
+}
+.banners .banner2 {
+  background-color: rgb(241, 239, 236);
+
+  width: 61.5%;
+  height: 126.8px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+}
+.banners .banner2 .logo-2 {
+
+  height: 30px;
+  align-self: center;
+}
+.banners .banner3 {
+  display: none;
+}
+.banners .banner4 {
+  width: 38.5%;
+  height: 126.8px;
+  padding-bottom: 0.001%;
+
+  }
+  .banners .banner4 .txt{
+    font-size: 20px;
+
+    }
+    .banners .banner4 .txt1{
+      font-size: 0.73em;
+
+
+    }
+.banners .green-banners {
+  width: 61.5%;
+  height: 253.6px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.banners .banner5 {
+  width: 100%;
+  height: 50%;
+}
+.banners .banner5 .txt2{
+  font-size: 16px;
+}
+.banners .banner5 .form{
+  height: 20px;
+  width: 160px;
+  margin-top: 10px;
+}
+.banners .banner5 .form .inp{
+  font-size: 10px;
+}
+.banners .banner5 .form .sub{
+  font-size: 10px;
+}
+.banners .banner5 .txt3{
+  font-size: 10px;
+  width: 73.37%;
+}
+.banners .banner6 {
+  background-image: url("image/image2.png");
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+}
+
+    .banners .banner7 {
+      width:  38.5%;
+      height: 253.6px;
+    }
+
+    .section {
+      width: 100%;
+
+      background-color: LightBlue;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+
+
+    }
+
+    .section .events-in-october {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+    }
+    .section .events-in-october .event-in-october {
+      background-color: pink;
+      width:  100%;
+      height: 30%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+    }
+    .section .events-in-october .event-in-october.red-date {
+      width: 88px;
+      height: 88px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .red-date:after {
+      content: '';
+      border: 15px solid transparent;
+      margin-top: 0px;
+      border-top: 15px solid rgb(155, 36, 45);
+      align-self: center;
+    }
+} /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  .banners{
+  width: 100%;
+  /*height: 1554px;*/
+  background-color: Pink;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 .banner1 {
-	background-image: url(image/n.png);
-	background-size: cover;
-	background-color: red;
-	width: 100%;
-	height: 38.88%;
-	display: flex;
-	flex-flow: column;
-	justify-content: flex-start;
+  background-image: url(image/n.png);
+  background-size: cover;
+  background-color: red;
+  width: 100%;
+  height: 604px;;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
 
 }
 .text{
@@ -148,7 +597,7 @@ header {
   line-height: 1.2;
   align-self: center;
  /* margin-left: 267.928px; */
-	margin-top: 0.3%;
+  margin-top: 0.3%;
 }
 
 .button {
@@ -168,23 +617,44 @@ header {
   align-self: center;
   /*left: 40.39%;*/
   margin-top: 3.6%;
-  width: 19.21%;
-  height: 9.46%;
+  width: 269px;
+  height: 56px;
+}
+.button-click {
+  position: relative;
+}
+
+.button-click:active::after {
+    content: attr(data-title);
+    font-family: "Roboto Slab";
+    font-weight: 100;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 160px;
+    top: 60px; /* Положение подсказки */
+    color: rgb(255, 255, 255);
+    text-shadow: 0, 0, 1px,rgba(0,0,0,0.7);
+    background-color: rgba(255,255,255,0.07); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 21px; /* Размер текста подсказки */
+    padding: 15px 25px; /* Поля */
+    border: 5px solid rgba(0,0,0,0.1); /* Параметры рамки */
 }
 .banner2 {
   background-color: rgb(241, 239, 236);
   /*margin-top: 718px; */
   width: 38.5%;
-  height: 20.46%;
+  height: 316px;
   display: flex;
   flex-flow: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .logo-2 {
   background-image: url("image/logo2.png");
   background-repeat:no-repeat;
-  margin-left: 39.72%;
-  margin-top: 23.93%;
+  background-size: contain;
+  /*margin-left: 37.73%;*/
+  margin-right: 8%;
+  align-self: center;
   width: 51.76%;
   height: 62.5px;
 }
@@ -195,15 +665,15 @@ header {
  /* margin-left: 41.5%;
   margin-top: 718px; */
   width: 23%;
-  height: 20.46%;
+  height: 316px;
 }
 .banner4 {
-	background-color: rgb(155, 36, 45);
+  background-color: rgb(155, 36, 45);
   width:  38.5%;
-  height: 20.46%;
+  height: 316px;
   display: flex;
-	flex-flow: column;
-	justify-content: center;
+  flex-flow: column;
+  justify-content: center;
 
 }
 .txt{
@@ -220,18 +690,18 @@ header {
   font-family: "Roboto";
   /*font-weight: 400;*/
   color: rgb(255, 255, 255);
-	text-align: left;
+  text-align: left;
   line-height: 1.375;
   margin-left: 8.1%;
   margin-top: 2.37%;
 }
 
 .green-banners {
-	width: 61.5%;
-	height: 40.8%;
-	display: flex;
-	flex-flow: column;
-	justify-content: flex-start;
+  width: 61.5%;
+  height: 633px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
 }
 .banner5 {
   background: rgb(70, 166, 81);
@@ -241,6 +711,14 @@ header {
   flex-flow: column;
   justify-content: flex-start;
 
+}
+
+}
+.banners .banner6 {
+  background-image: url("image/image2.png");
+  background-size: cover;
+  width: 100%;
+  height: 50%;
 }
 .txt2 {
   font-size: 40px;
@@ -252,18 +730,21 @@ header {
   margin-top: 6.77%;
 }
 .form {
-  width: 46.18%;
-  height: 13.81%;
+  width: 397px;
+  height: 44px;
   background-color: pink;
   align-self: flex-end;
   margin-right: 9.10%;
   margin-top: 2.8%;
   display: flex;
   flex-flow: row;
-  justify-content: flex-start;
+  justify-content: center;
 
 }
-.inp {
+
+
+
+.form .inp {
   background-color: rgb(94, 192, 105);
   color: rgb(70, 166, 81);
   opacity: 0.5;
@@ -276,7 +757,7 @@ header {
   height: 100%;
   outline: none;
 }
-.sub {
+.form .sub {
   background-color: rgb(52, 142, 62);
   color: rgb(255, 255, 255);
   border: none;
@@ -285,7 +766,6 @@ header {
   width: 30.48%;
   height: 100%;
   outline: none;
-
 }
 .txt3 {
   font-size: 16px;
@@ -298,8 +778,9 @@ header {
   margin-right: 9.10%;
   margin-top: 1.67%;
   width: 59.8%;
-  height: 39px;*/
+  height: 39px;
 }
+
 .banner6 {
   background-image: url("image/image2.png");
   background-size: cover;
@@ -310,12 +791,21 @@ header {
   background-image: url("image/image3.png");
   background-size: cover;
   width:  38.5%;
-  height: 40.8%;
+  height: 633px;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
 
 
+}
+.Layer_17 {
+  background-image: url("Layer 17.png");
+  position: absolute;
+  left: 720px;
+  top: 889px;
+  width: 680px;
+  height: 779px;
+  z-index: 43;
 }
 
 .like{
@@ -328,13 +818,14 @@ header {
 }
 .section {
   width: 100%;
-  height: 25.03%;
+  height: 48%;
   background-color: LightBlue;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
 
 }
+
 .events-title {
   font-size: 50px;
   font-weight: 300;
@@ -353,7 +844,7 @@ header {
  margin-top: 3.76%;
  background-color: yellow;
  width: 68.5%;
- height: 50.15%;
+ height: 30.15%;
  list-style-type: none;
  display: flex;
  flex-direction: row;
@@ -472,8 +963,8 @@ header {
   line-height: 1.571;
   margin: auto;
 }
-footer {
+/*footer {
   background-color: rgb(55, 56, 56);
   width: 100%;
   height: 14.05%;
-}
+}*/
